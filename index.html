@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/w3pro.css">
     <title>Hacker Space</title>
@@ -26,5 +28,46 @@
         </nav>
     </header>
     <!-- header end -->
+
+
+    <main>
+        <section class="carrusel">
+            <div class="w3-row" style="margin-bottom:2em">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(img/img-slide.jpeg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/img-slide2.jpeg)"></div>
+                    </div>
+                    
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+            
+            </div>
+        </section>
+    </main>
+
+
+
+<script src="swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper', {
+        spaceBetween: 30,
+        speed: 800,
+        disableOnInteraction: false,
+        effect: 'fade',
+        adeEffect: {
+        crossFade: true
+        },
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        },
+        autoplay: {
+        delay: 3000,
+        }
+    });
+</script>
+
 </body>
 </html>
