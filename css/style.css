@@ -5,29 +5,33 @@
 }
 
 
-a {
-    text-decoration: none
-}
-
-nav {
-    background-color:#161E54; 
-    color: white;
-    height: 60px
-}
-
-
 .contenido{
 	max-width:1200px;
 	margin:10px auto; 
     padding:0 14px
 }
 
+.linea {
+    height: 10px;
+    background-color: #0d2831
+}
+
+.phrase p {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    width: 70%
+}
+
 
 .swiper {width: 100%; height: 600px;}
 .swiper-slide {background-position: center; background-size: cover;}
 .swiper-pagination {position: relative; margin-top: 30px;}
-.swiper-pagination-bullet{background: #fff; border:solid thin #cccccc; opacity: 1; width:14px; height:14px}
-.swiper-pagination-bullet-active{background: #f15a24; border:solid thin #f15a24; opacity: 1}
+/* .swiper-pagination-bullet{background: #fff; border:solid thin #cccccc; opacity: 1; width:14px; height:14px}
+.swiper-pagination-bullet-active{background: #0d2831; border:solid thin #0d2831; opacity: 1} */
+.swiper-pagination-bullet{background: #0d2831; border:solid thin #0d2831; opacity: 1; width:14px; height:14px}
+.swiper-pagination-bullet-active{background: #fff; border:solid thin #0d2831; opacity: 1}
 
 
 @font-face {
